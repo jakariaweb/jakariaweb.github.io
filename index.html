@@ -1,1 +1,197 @@
-<!DOCTYPE html><html><head><title>Developer</title></head><body></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image To Text with Translate</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px 24px;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #6c63ff, #3b82f6);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 32px;
+            box-shadow: 0 8px 32px rgba(108, 99, 255, 0.3);
+        }
+
+        .icon svg {
+            width: 56px;
+            height: 56px;
+            fill: #fff;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 20px 16px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-icon {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .feature h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .feature p {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.4;
+        }
+
+        .play-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: #fff;
+            color: #1a1a2e;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 14px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .play-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .play-btn svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.4);
+            text-decoration: none;
+            font-size: 0.82rem;
+            margin: 0 12px;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .contact {
+            margin-top: 12px;
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 1.5rem; }
+            .features { grid-template-columns: 1fr; }
+            .container { padding: 32px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 15h6v2H5zm8-4h4v6h-4zm0-4h4v2h-4zM5 7h6v6H5z"/>
+            </svg>
+        </div>
+
+        <h1>Image To Text with Translate</h1>
+        <p class="tagline">Extract text from any image and translate it into 60+ languages &mdash; all offline, right on your device.</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">&#128248;</div>
+                <h3>Smart OCR</h3>
+                <p>Extract text from photos, screenshots, and documents</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#127760;</div>
+                <h3>60+ Languages</h3>
+                <p>Translate between dozens of languages instantly</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#128274;</div>
+                <h3>100% Offline</h3>
+                <p>Everything runs on your device &mdash; no data leaves your phone</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">&#9889;</div>
+                <h3>Fast &amp; Free</h3>
+                <p>Get results in seconds with no account required</p>
+            </div>
+        </div>
+
+        <a href="https://play.google.com/store/apps/details?id=com.imagetotextyhtm" class="play-btn">
+            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M48 59.49v393a4.33 4.33 0 007.37 3.07L260 256 55.37 56.42A4.33 4.33 0 0048 59.49zM345.8 174L89.22 32.64l-.16-.09c-4.42-2.4-8.62 3.58-5 7.06l201.13 192.32zM84.08 472.39c-3.64 3.48.56 9.46 5 7.06l.16-.09L345.8 338l-60.61-57.95zM449.38 231l-71.65-39.46L310.36 256l67.37 64.43L449.38 281c19.49-10.77 19.49-39.23 0-50z" fill="#1a1a2e"/>
+            </svg>
+            Get it on Google Play
+        </a>
+
+        <footer>
+            <div>
+                <a href="https://sites.google.com/view/imagetotextwithhtranslate/privacy-policy">Privacy Policy</a>
+                <a href="https://sites.google.com/view/imagetotextwithhtranslate/terms-of-service">Terms of Service</a>
+            </div>
+            <p class="contact">Contact: jakariahossainweb@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>
