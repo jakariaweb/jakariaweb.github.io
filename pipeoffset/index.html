@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipe Offset Calculator</title>
+  <meta name="description" content="Pipe offset calculator for plumbers and pipefitters: offset, rolling offset, cut length, parallel pipes and fall.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #10142b;
+      --card: #1b2040;
+      --accent: #ff9f43;
+      --accent2: #7c4dff;
+      --text: #eef0ff;
+      --muted: #9aa0c3;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 80px 0 60px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% -20%, rgba(124, 77, 255, 0.35), transparent 60%),
+                  radial-gradient(ellipse at 80% 10%, rgba(255, 159, 67, 0.18), transparent 50%);
+    }
+    .app-icon {
+      width: 96px; height: 96px;
+      border-radius: 24px;
+      display: inline-block;
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 12px 40px rgba(124, 77, 255, 0.35);
+    }
+    .app-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; letter-spacing: -0.02em; }
+    .tagline { font-size: 1.25rem; color: var(--muted); margin: 16px auto 32px; max-width: 560px; }
+    .store-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: linear-gradient(135deg, var(--accent2), #4d7cff);
+      color: #fff; text-decoration: none;
+      font-weight: 700; font-size: 1.05rem;
+      padding: 15px 32px; border-radius: 14px;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      box-shadow: 0 8px 24px rgba(124, 77, 255, 0.4);
+    }
+    .store-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(124, 77, 255, 0.55); }
+    section { padding: 56px 0; }
+    h2 { text-align: center; font-size: 1.8rem; margin-bottom: 40px; letter-spacing: -0.01em; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 28px 24px;
+    }
+    .feature .emoji { font-size: 2rem; display: block; margin-bottom: 12px; }
+    .feature h3 { font-size: 1.1rem; margin-bottom: 8px; }
+    .feature p { color: var(--muted); font-size: 0.95rem; }
+    .cta {
+      text-align: center;
+      background: var(--card);
+      border-radius: 20px;
+      padding: 48px 24px;
+      margin-bottom: 56px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .cta p { color: var(--muted); margin: 8px 0 24px; }
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 32px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    footer a { color: var(--accent2); text-decoration: none; margin: 0 10px; }
+    footer a:hover { text-decoration: underline; }
+    .footer-links { margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="app-icon"><img src="app-icon.png" alt="Pipe Offset Calculator icon"></div>
+      <h1>Pipe Offset Calculator</h1>
+      <p class="tagline">Offset, rolling offset, cut length, parallel pipes and fall. Works in feet, inches, fractions and millimetres.</p>
+      <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.yhubsoft.pipeoffset" target="_blank" rel="noopener">
+        &#9654; Get it on Google Play
+      </a>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>Why You'll Love It</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="emoji">&#127919;</span>
+          <h3>Enter Any Two Values</h3>
+          <p>Give any two of offset, run, travel and angle. The rest appears as you type.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">&#129504;</span>
+          <h3>Rolling Offsets</h3>
+          <p>Get true offset, travel, run and the twist angle from rise and roll.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">&#128142;</span>
+          <h3>Cut Lengths</h3>
+          <p>Take-off from bend radius, weld gaps and make-up included.</p>
+        </div>
+        <div class="feature">
+          <span class="emoji">&#128244;</span>
+          <h3>Works Without Internet</h3>
+          <p>All calculations run on your phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="cta">
+        <h2>Ready to Cut?</h2>
+        <p>Get Pipe Offset Calculator on Google Play.</p>
+        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.yhubsoft.pipeoffset" target="_blank" rel="noopener">
+          &#9654; Download Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a> &middot;
+        <a href="terms.html">Terms of Service</a>
+      </div>
+      <p>Contact: <a href="mailto:jakariahossainweb@gmail.com">jakariahossainweb@gmail.com</a></p>
+      <p>&copy; 2026 Pipe Offset Calculator. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
